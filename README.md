@@ -9,3 +9,4 @@ This is the pre-assignment for Solita Dev Academy Finland 2023. Made with follow
 * Docker compose: v2.14.1
 * Flyway: 9.11.0-alpine
 * postgres:14.1
+* Fresh: frontend framework compatible with deno

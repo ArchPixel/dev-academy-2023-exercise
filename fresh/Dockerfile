@@ -8,4 +8,6 @@ WORKDIR /fresh
 COPY . .
 RUN deno cache main.ts --import-map=import_map.json
 
-CMD ["run","-A","main.ts"]
+EXPOSE 8000
+
+CMD ["run","watch","--allow-net","--allow-read","--allow-env","--allow-run","-A","main.ts"]
