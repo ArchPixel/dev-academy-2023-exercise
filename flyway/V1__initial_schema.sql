@@ -10,6 +10,6 @@ CREATE TABLE Journeys (
 );
 
 COPY Journeys 
-    FROM '/csv/2021-05.csv'
+    FROM '/data/2021-05.csv'
     WITH (FORMAT csv, HEADER);
 

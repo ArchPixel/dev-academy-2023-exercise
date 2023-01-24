@@ -15,13 +15,25 @@ services:
       - flyway
     env_file:
       - project.env
+  
+  frontend:
+    container_name: fresh-pages
+    build: fresh
+    ports:
+      - 8000:8000
+    volumes:
+      - ./fresh:/fresh
+    depends_on:
+      - app
+    env_file:
+      - fresh.env
 
   database:
     container_name: database-server
     image: postgres:14.1
     restart: "no"
     volumes:
-      - ./csv/:/csv
+      - ./data/:/data
     env_file:
         - project.env
 
