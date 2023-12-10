@@ -7,7 +7,6 @@ services:
     restart: "no"
     volumes:
       - ./app/:/app
-      - ./app-cache/:/app-cache
     ports:
       - 7777:7777
     depends_on:
@@ -15,21 +14,9 @@ services:
       - flyway
     env_file:
       - project.env
-  
-  frontend:
-    container_name: fresh-pages
-    build: fresh
-    ports:
-      - 8000:8000
-    volumes:
-      - ./fresh:/fresh
-    depends_on:
-      - app
-    env_file:
-      - fresh.env
 
   database:
-    container_name: database-server
+    container_name: database-0c6f3260-be9f-4b73-b010-aade961d0110
     image: postgres:14.1
     restart: "no"
     volumes:
