@@ -7,6 +7,6 @@ This is the pre-assignment for Solita Dev Academy Finland 2023. Made with follow
   * typescript: 4.9.4
 * Docker: v24.0.7, build afdd53b
 * Docker compose: v2.21.0
-* Flyway: 9.11.0-alpine
+* Flyway: 10.2.0-alpine
 * postgres:14.1
 * EtaFile: A lightweight JS template engine for html 
