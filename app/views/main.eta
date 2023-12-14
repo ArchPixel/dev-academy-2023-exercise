@@ -4,12 +4,12 @@
 <% if (it.someTopEntries) { %>
   <% it.someTopEntries.forEach((obj) => { %>
       <div>
-        <h4><%= obj.Departure %></h4>
-        <h4><%= obj.Arrival %></h4>
-        <h4><%= obj.Travel_length_m %></h4>
-        <h4><%= obj.Duration_sec %></h4>
-        <h4><%= obj.Departure_station_name %></h4>
-        <h4><%= obj.Target_station_name %></h4>
+        <h4><%= obj.departure %></h4>
+        <h4><%= obj.arrival %></h4>
+        <h4><%= obj.travel_length_m %></h4>
+        <h4><%= obj.duration_sec %></h4>
+        <h4><%= obj.departure_station_name %></h4>
+        <h4><%= obj.target_station_name %></h4>
       </div>  
   <% }); %>
 <% } else { %>
